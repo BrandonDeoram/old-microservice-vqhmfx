@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+.app-container {
+  min-height: 100vh;
+  background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yGFWG0EdTKAMaAxJgNMyU6qJIfOtc3.png");
+  background-size: fit;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  color: red;
+  animation: float linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ff4081;
+  font-family: "Indie Flower", cursive;
+}
+
+.message {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.message p {
+  margin-bottom: 1rem;
+}
+
+.message p:first-child,
+.message p:nth-last-child(2) {
+  font-weight: bold;
+  color: #ff4081;
+}
+
+.message p:last-child {
+  text-align: right;
+  font-style: italic;
+  color: #ff4081;
+}
